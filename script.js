@@ -44,10 +44,12 @@ const i18n = {
     j1: {
       role:  { zh: '助理软件开发工程师', en: 'Associate Software Developer' },
       date:  { zh: '2025.02 — 至今', en: '2025.02 — Present' },
-      b1:    { zh: '熟练运用 DeepSeek 和 Gemini 等 AI 工具处理复杂技术调研，通过精准的任务碎片化拆解，实现"对症下药"式的问题解决，显著减少了资料搜索和团队沟通成本', en: 'Leveraged AI tools (DeepSeek, Gemini) for complex technical research, achieving targeted problem-solving through precise task decomposition — significantly reducing research time and team communication overhead' },
-      b2:    { zh: '针对大数据量场景，通过实施请求合并 (Bundling)、按需加载 (Lazy Loading) 及异步流控策略，大幅减少冗余网络开销，使页面核心数据加载时间缩短了 40%', en: 'Reduced core page data load time by 40% through request bundling, lazy loading, and async flow control strategies in large-dataset scenarios' },
-      b3:    { zh: '针对现有 Angular 陈旧代码进行深度优化，利用 AI 辅助提取公共逻辑并封装为可复用的通用组件，极大简化了代码结构并提升了项目的可维护性', en: 'Deep-optimized legacy Angular code by using AI-assisted extraction of shared logic into reusable components, significantly simplifying code structure and improving maintainability' },
-      b4:    { zh: '担任技术与客户间的沟通桥梁，通过高效的需求评审与进度管理，确保复杂功能在紧迫的 Deadline 内高质量交付，凭借出色的沟通能力减少了 20% 的需求变更损耗', en: 'Served as the bridge between technical teams and clients — reduced requirement churn by 20% through efficient review and progress management, delivering complex features on tight deadlines' },
+      b1:    { zh: '独立负责完整 Sprint 迭代：近期主导一个完整迭代周期，涵盖新功能开发、UI 优化、缺陷修复与单元测试，协调从需求澄清到客户测试打包的全流程，实现零延期交付', en: 'Independently led a full Sprint iteration — new features, UI optimization, bug fixes, and unit testing; coordinated end-to-end from requirements to client test package with zero-delay delivery' },
+      b2:    { zh: '设计并应用 FHIR transaction bundle 将多次分散请求整合为单一调用，结合按需加载与异步流控，页面加载时间缩短 40%，显著降低高并发场景下的网络开销与出错率', en: 'Designed and applied FHIR transaction bundles to consolidate scattered requests into single calls, reducing page load time by 40% via lazy loading and async flow control in high-concurrency scenarios' },
+      b3:    { zh: '独立实现基于 FHIR Questionnaire 的动态表单引擎，支持条件渲染与多控件类型；负责里程碑状态机核心逻辑，确保多角色工作流准确流转', en: 'Independently built a FHIR Questionnaire-based dynamic form engine with conditional rendering and multi-widget types; implemented milestone state machine logic for accurate multi-role workflow transitions' },
+      b4:    { zh: '编写 Postman 脚本批处理老旧数据，解决功能变更带来的数据结构迁移问题；优化 GitLab CI/CD 流水线，提升构建稳定性与部署效率', en: 'Wrote Postman scripts for batch-processing legacy data to resolve structural migration issues; optimized GitLab CI/CD pipelines for improved build stability and deployment efficiency' },
+      b5:    { zh: '运用 DeepSeek / Gemini 进行复杂技术调研与代码重构，将遗留 Angular 组件中的公共逻辑封装为可复用模块，显著提升可维护性和开发效率', en: 'Leveraged DeepSeek / Gemini for complex technical research and code refactoring, extracting shared logic from legacy Angular components into reusable modules — greatly improving maintainability and dev efficiency' },
+      b6:    { zh: '独立主持多场客户技术评议会，向团队与干系人同步每日进度；通过高效需求对齐与变更管控，减少约 20% 的需求返工损耗', en: 'Independently led multiple client technical review sessions, syncing daily progress with the team and stakeholders; reduced requirement churn by ~20% through efficient alignment and change management' },
     },
     j2: {
       role:  { zh: '初级软件开发工程师', en: 'Junior Software Developer' },
@@ -79,6 +81,15 @@ const i18n = {
       b1:       { zh: '基于 Next.js 14 构建全栈应用，实现前后端一体化开发。使用 React + TypeScript 开发具有实时消息渲染、自动滚动与响应式布局的交互式聊天界面', en: 'Built full-stack app with Next.js 14 (unified frontend + backend). Developed interactive chat UI with React + TypeScript featuring real-time message rendering, auto-scroll, and responsive layout' },
       b2:       { zh: '集成 OpenAI GPT-3.5-Turbo 模型，设计并实现支持完整对话上下文记忆的 RESTful API 接口，通过智能会话管理实现连续对话能力', en: 'Integrated OpenAI GPT-3.5-Turbo, designed RESTful APIs with full conversation context memory — enabling coherent multi-turn dialogue through intelligent session management' },
       b3:       { zh: '设计上下文感知的聊天历史系统，确保 AI 在多轮对话中保持逻辑一致性和记忆连贯性，提升人机交互的自然度与效率', en: 'Designed context-aware chat history system ensuring logical consistency and memory continuity across multi-turn conversations, improving human-AI interaction quality' },
+    },
+    p3: {
+      name:     { zh: 'AI Todo — 用对话管理任务', en: 'AI Todo — Task Management via Conversation' },
+      subtitle: { zh: 'AI Todo', en: 'AI Todo' },
+      b1:       { zh: '集成 DeepSeek Function Calling 实现自然语言对话式任务操作，用户直接输入指令，AI 理解意图并自动执行增删改查，实时同步任务面板', en: 'Integrated DeepSeek Function Calling for conversational task management — users type natural language commands; AI interprets intent and auto-executes CRUD operations, syncing to the task panel in real time' },
+      b2:       { zh: '基于 Next.js App Router 构建全栈应用，前端 React + TypeScript 实现聊天式双栏布局，后端 API Routes 处理认证与 AI 对话，数据库采用腾讯 CloudBase HTTP API', en: 'Built full-stack app with Next.js App Router — React + TypeScript chat-style dual-panel UI, API Routes for auth and AI dialogue, Tencent CloudBase HTTP API as the database layer' },
+      b3:       { zh: '设计云端优先 → localStorage 缓存 → 示例数据的三级容错方案，确保离线、弱网场景下应用仍可完整使用，多用户数据隔离', en: 'Designed a three-tier fallback strategy — Cloud-first → localStorage cache → sample data — ensuring full app usability offline or on weak networks; multi-tenant data isolation and async cloud sync' },
+      b4:       { zh: '自建登录系统：IP 级滑动窗口限流、跨标签页登录状态同步、演示账户一键登录、密码显隐切换，会话持久化于 localStorage', en: 'Custom auth system with IP-based sliding-window rate limiting, cross-tab login sync, demo account one-click login, password show/hide toggle, and localStorage session persistence' },
+      b5:       { zh: '将任务操作抽象为纯函数 (Task[] → Task[])，AI 工具调用、服务端执行、前端状态更新完全复用同一逻辑，易于测试和维护', en: 'Abstracted all task operations as pure functions (Task[] → Task[]), reused identically across AI tool calls, server-side execution, and frontend state updates — easy to test and maintain' },
     },
   },
   edu: {

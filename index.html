@@ -82,7 +82,7 @@
               <span class="stat-label" data-i18n="about.stat1">年经验</span>
             </div>
             <div class="stat">
-              <span class="stat-num">5+</span>
+              <span class="stat-num">6+</span>
               <span class="stat-label" data-i18n="about.stat2">项目交付</span>
             </div>
             <div class="stat">
@@ -166,10 +166,12 @@
                 <span class="timeline-date" data-i18n="exp.j1.date">2025.02 — 至今</span>
               </div>
               <ul class="timeline-bullets">
-                <li data-i18n="exp.j1.b1">熟练运用 DeepSeek 和 Gemini 等 AI 工具处理复杂技术调研，通过精准的任务碎片化拆解，实现"对症下药"式的问题解决，显著减少了资料搜索和团队沟通成本</li>
-                <li data-i18n="exp.j1.b2">针对大数据量场景，通过实施请求合并 (Bundling)、按需加载 (Lazy Loading) 及异步流控策略，大幅减少冗余网络开销，使页面核心数据加载时间缩短了 40%</li>
-                <li data-i18n="exp.j1.b3">针对现有 Angular 陈旧代码进行深度优化，利用 AI 辅助提取公共逻辑并封装为可复用的通用组件，极大简化了代码结构并提升了项目的可维护性</li>
-                <li data-i18n="exp.j1.b4">担任技术与客户间的沟通桥梁，通过高效的需求评审与进度管理，确保复杂功能在紧迫的 Deadline 内高质量交付，凭借出色的沟通能力减少了 20% 的需求变更损耗</li>
+                <li data-i18n="exp.j1.b1">独立负责完整 Sprint 迭代：近期主导一个完整迭代周期，涵盖新功能开发、UI 优化、缺陷修复与单元测试，协调从需求澄清到客户测试打包的全流程，实现零延期交付</li>
+                <li data-i18n="exp.j1.b2">设计并应用 FHIR transaction bundle 将多次分散请求整合为单一调用，结合按需加载与异步流控，页面加载时间缩短 40%，显著降低高并发场景下的网络开销与出错率</li>
+                <li data-i18n="exp.j1.b3">独立实现基于 FHIR Questionnaire 的动态表单引擎，支持条件渲染与多控件类型；负责里程碑状态机核心逻辑，确保多角色工作流准确流转</li>
+                <li data-i18n="exp.j1.b4">编写 Postman 脚本批处理老旧数据，解决功能变更带来的数据结构迁移问题；优化 GitLab CI/CD 流水线，提升构建稳定性与部署效率</li>
+                <li data-i18n="exp.j1.b5">运用 DeepSeek / Gemini 进行复杂技术调研与代码重构，将遗留 Angular 组件中的公共逻辑封装为可复用模块，显著提升可维护性和开发效率</li>
+                <li data-i18n="exp.j1.b6">独立主持多场客户技术评议会，向团队与干系人同步每日进度；通过高效需求对齐与变更管控，减少约 20% 的需求返工损耗</li>
               </ul>
             </div>
           </div>
@@ -266,6 +268,29 @@
             <div class="project-links">
               <a href="https://www.bilibili.com/video/BV1156aBeEaD/" target="_blank" rel="noopener" class="project-link" data-i18n="projects.demo">▶ 演示视频</a>
               <a href="https://my-first-ai-project-steel.vercel.app/" target="_blank" rel="noopener" class="project-link">在线体验 ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: AI Todo -->
+        <div class="project-card reveal">
+          <div class="project-card-accent"></div>
+          <div class="project-card-body">
+            <h3 class="project-name" data-i18n="projects.p3.name">AI Todo — 用对话管理任务</h3>
+            <p class="project-subtitle" data-i18n="projects.p3.subtitle">AI Todo</p>
+            <div class="project-tags">
+              <span>Next.js</span><span>TypeScript</span><span>DeepSeek API</span><span>腾讯 CloudBase</span>
+            </div>
+            <ul class="project-bullets">
+              <li data-i18n="projects.p3.b1">集成 DeepSeek Function Calling 实现自然语言对话式任务操作，用户直接输入指令，AI 理解意图并自动执行增删改查，实时同步任务面板</li>
+              <li data-i18n="projects.p3.b2">基于 Next.js App Router 构建全栈应用，前端 React + TypeScript 实现聊天式双栏布局，后端 API Routes 处理认证与 AI 对话，数据库采用腾讯 CloudBase HTTP API</li>
+              <li data-i18n="projects.p3.b3">设计云端优先 → localStorage 缓存 → 示例数据的三级容错方案，确保离线、弱网场景下应用仍可完整使用，多用户数据隔离</li>
+              <li data-i18n="projects.p3.b4">自建登录系统：IP 级滑动窗口限流、跨标签页登录状态同步、演示账户一键登录、密码显隐切换，会话持久化于 localStorage</li>
+              <li data-i18n="projects.p3.b5">将任务操作抽象为纯函数 (Task[] → Task[])，AI 工具调用、服务端执行、前端状态更新完全复用同一逻辑，易于测试和维护</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://www.bilibili.com/video/BV1YCfKBWET4/" target="_blank" rel="noopener" class="project-link" data-i18n="projects.demo">▶ 演示视频</a>
+              <a href="https://ai-to-do-list-phi.vercel.app/" target="_blank" rel="noopener" class="project-link">在线体验 ↗</a>
             </div>
           </div>
         </div>
