@@ -33,11 +33,12 @@ const i18n = {
   skills: {
     title: { zh: '技术技能', en: 'Technical Skills' },
     cat1:  { zh: '编程语言', en: 'Languages' },
-    cat2:  { zh: '前端', en: 'Frontend' },
-    cat3:  { zh: '后端', en: 'Backend' },
-    cat4:  { zh: '数据库', en: 'Databases' },
-    cat5:  { zh: '工具 / DevOps', en: 'Tools / DevOps' },
-    cat6:  { zh: 'AI / 核心能力', en: 'AI / Core Competencies' },
+    cat2:  { zh: '前端框架与工具', en: 'Frontend Frameworks & Tools' },
+    cat3:  { zh: '后端与 API', en: 'Backend & API' },
+    cat4:  { zh: '数据库与云服务', en: 'Databases & Cloud' },
+    cat5:  { zh: 'AI / LLM 开发', en: 'AI / LLM Development' },
+    cat6:  { zh: '测试与 DevOps', en: 'Testing & DevOps' },
+    cat7:  { zh: '其他', en: 'Other' },
   },
   exp: {
     title: { zh: '工作经历', en: 'Work Experience' },
