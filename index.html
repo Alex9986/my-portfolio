@@ -362,9 +362,26 @@
           <span class="contact-label">LinkedIn</span>
           <span class="contact-value">ke-shang</span>
         </a>
+        <div class="contact-card contact-card-qr reveal" id="wechatCard">
+          <div class="contact-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.902 2.489 3.41 3.775 5.86 3.386.235-.037.463-.07.688-.07.24 0 .454.04.61.134l2.062 1.207c.047.027.092.049.15.049.137 0 .243-.114.243-.257 0-.059-.024-.117-.04-.179l-.496-1.825a.555.555 0 01.201-.58c2.038-1.585 2.983-3.769 2.576-5.96-.467-2.515-2.492-4.004-4.794-3.911zm-3.095 2.23c.533 0 .965.438.965.979a.972.972 0 01-.965.977.972.972 0 01-.965-.977c0-.54.432-.979.965-.979zm4.654.163c.482 0 .873.395.873.882a.878.878 0 01-.873.883.878.878 0 01-.873-.883c0-.487.391-.882.873-.882z"/></svg>
+          </div>
+          <span class="contact-label" data-i18n="contact.wechat">微信</span>
+          <span class="contact-value" data-i18n="contact.wechatHint">点击查看二维码</span>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- QR Modal -->
+  <div class="qr-modal" id="qrModal">
+    <div class="qr-modal-content">
+      <img src="QR.jpg" alt="微信二维码" class="qr-modal-image">
+      <p class="qr-modal-title" data-i18n="contact.qrTitle">微信扫码添加</p>
+      <p class="qr-modal-sub" data-i18n="contact.qrSub">尚可 (Alex)</p>
+      <button class="qr-modal-close" id="qrModalClose" data-i18n="contact.qrClose">关闭</button>
+    </div>
+  </div>
 
   <!-- ========== FOOTER ========== -->
   <footer class="footer">

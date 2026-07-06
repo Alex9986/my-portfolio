@@ -898,9 +898,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--text-secondary);
   margin-bottom: 3rem;
   font-size: clamp(0.95rem, 1.5vw, 1.1rem);
-  max-width: 500px;
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
+  text-wrap: balance;
 }
 
 .contact-grid {
@@ -943,6 +944,88 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 0.95rem;
   font-weight: 500;
   word-break: break-all;
+}
+
+/* QR code card */
+.contact-card-qr {
+  cursor: pointer;
+}
+
+.contact-card-qr:hover {
+  border-color: rgba(139, 92, 246, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.08);
+}
+
+/* QR modal overlay */
+.qr-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.qr-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.qr-modal-content {
+  background: var(--bg-deep);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 2rem 2rem 1.5rem;
+  text-align: center;
+  max-width: 360px;
+  box-shadow: 0 16px 48px rgba(139, 92, 246, 0.15);
+  transform: scale(0.95);
+  transition: transform 0.3s;
+}
+
+.qr-modal.open .qr-modal-content {
+  transform: scale(1);
+}
+
+.qr-modal-image {
+  width: 280px;
+  height: 360px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.qr-modal-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.qr-modal-sub {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+}
+
+.qr-modal-close {
+  background: var(--accent-primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+}
+
+.qr-modal-close:hover {
+  opacity: 0.85;
 }
 
 /* =============================================

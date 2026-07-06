@@ -104,6 +104,11 @@ const i18n = {
     title:       { zh: '联系我', en: 'Get In Touch' },
     subtitle:    { zh: '很高兴认识你 — 无论是技术交流、项目合作，还是只是想打个招呼 👋', en: 'Always happy to connect — whether for tech discussions, collaboration, or just to say hi 👋' },
     email:       { zh: '邮箱', en: 'Email' },
+    wechat:      { zh: '微信', en: 'WeChat' },
+    wechatHint:  { zh: '点击查看二维码', en: 'Click to view QR' },
+    qrTitle:     { zh: '微信扫码添加', en: 'Scan to add on WeChat' },
+    qrSub:       { zh: '尚可 (Alex)', en: '尚可 (Alex)' },
+    qrClose:     { zh: '关闭', en: 'Close' },
     placeholder: { zh: '添加链接', en: 'Add Link' },
   },
   footer: {
@@ -339,6 +344,36 @@ document.querySelectorAll('[data-placeholder="true"]').forEach(el => {
     e.preventDefault();
     showTooltip();
   });
+});
+
+/* =============================================
+   QR MODAL
+   ============================================= */
+const qrModal = document.getElementById('qrModal');
+const qrCard = document.getElementById('wechatCard');
+const qrClose = document.getElementById('qrModalClose');
+
+function openQrModal() {
+  qrModal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeQrModal() {
+  qrModal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+qrCard.addEventListener('click', openQrModal);
+qrClose.addEventListener('click', closeQrModal);
+qrModal.addEventListener('click', (e) => {
+  if (e.target === qrModal) closeQrModal();
+});
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && qrModal.classList.contains('open')) {
+    closeQrModal();
+  }
 });
 
 /* =============================================
